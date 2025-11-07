@@ -28,9 +28,12 @@
   align-items:end;
   justify-content: center;
 }
+img{
+  width: 100%;
+  height: auto;
+}
 
-
-section {
+.som {
   display: flex;
   justify-content: center;
   border: 2px solid darkslategray;
@@ -42,18 +45,33 @@ section {
 }
 
 
-body{
-  margin: auto;
-  background-color: black;
+.Sommaire{
+  display: flex;
+  justify-content: center;
+
+
 }
 
-main {
-    justify-content: space-around;
-    display: flex;
-    background-color: lightgray;
-    width: 98%;
-    margin: auto;
-    padding: 5px;
+#tree{
+  background-color: lightgray;
+  width: 98%;
+  margin: auto;
+  padding: 5px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+body{
+  margin: auto;
+  background-color: blueviolet;
+}
+
+#accueil {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr ;
 }
 
 
