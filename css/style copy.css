@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-
+.img_header{
+  max-width:100px ;
+}
 #loader{
     color:darkblue;
     position: fixed;
@@ -22,6 +24,19 @@
     background:lightgray;
 }
 
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Main_Header{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
+  display: flex;
+  align-items: center;
+}
+
 #entete{
   background-color: rgb(255, 0, 0);
   display: flex;
@@ -36,7 +51,7 @@ img{
 header{
   border: 2px solid white;
   
-  background: rgba(0, 217, 255, 0.116);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 div{
@@ -60,7 +75,7 @@ body{
   margin: auto;
   background-image: url(/images/Silksong_Promo_01.png);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment:fixed;
   background-size: 100% 100%;
 }
 
