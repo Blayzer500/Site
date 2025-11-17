@@ -25,17 +25,27 @@
 }
 
 #header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 
+#First{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Second{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 #Main_Header{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: azure;
   display: flex;
   align-items: center;
 }
+
 
 #entete{
   background-color: rgb(255, 0, 0);
