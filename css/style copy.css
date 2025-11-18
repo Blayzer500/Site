@@ -61,7 +61,7 @@ img{
 header{
   border: 2px solid white;
   
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0);
 }
 
 div{
@@ -81,16 +81,31 @@ div{
   justify-content: center;
 }
 
-body{
+#Accueil{
   margin: auto;
   background-image: url(/images/Silksong_Promo_01.png);
   background-repeat: no-repeat;
   background-attachment:fixed;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: cover;
+}
+#Jeu_Board{
+  background-color: black;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+
+}
+#Board_Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin:auto;
+
 }
 
-
-main{
+#Main_Accueil{
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 1fr 1fr ;
@@ -99,9 +114,38 @@ main{
   border-radius: 8px;
   margin: 5% 5% ;
 }
-
-
-
+#Under_Main_Jeu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+#Main_Jeu{
+  background-image: url(/images/image_1.jpg) ;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+}
+#Jeu_Soundtrack{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+* {
+  box-sizing: border-box;
+}
+#YTB{
+  
+  border: 3px solid #f1f1f1;
+  width: 80%; 
+  height:800px;
+}
 
 @keyframes Disparition {
     0% {
