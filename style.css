@@ -191,6 +191,9 @@ div {
   }
 }
 
+#Burger { display: none; }
+
+
 .nav-mobile {
   left: 0%;
   position: absolute;
