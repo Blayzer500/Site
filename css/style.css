@@ -82,7 +82,7 @@ div {
 
 #Accueil {
   margin: auto;
-  background-image: url(/images/Silksong_Promo_01.png);
+  background-image: url(./images/Silksong_Promo_01.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
