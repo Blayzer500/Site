@@ -4,85 +4,361 @@
   box-sizing: border-box;
 }
 
-
-#loader{
-    color:darkblue;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: Disparition 3s forwards;
-    opacity: 1;
-    visibility: visible;
-    z-index: 1000;
-    width: 100vw;
-    height: 100vh;
-    background:lightgray;
+.img_header {
+  max-width: 200px;
 }
 
-#entete{
-  background-color: rgb(255, 0, 0);
+#loader {
+  color: darkblue;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  align-items:end;
+  align-items: center;
+  justify-content: center;
+  animation: Disparition 3s forwards;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background: lightgray;
+}
+
+#header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+#First {
+  display: flex;
+}
+
+#Second {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+#Main_Header {
+  padding: 10px;
+  color: azure;
+  display: flex;
+  align-items: center;
+}
+
+
+
+header {
+  border: 2px solid white;
+
+  background: rgba(0, 0, 0);
+}
+
+div {
+  display: flex;
   justify-content: center;
 }
-img{
-  width: 100%;
-  height: auto;
-}
 
-.som {
+#text {
   display: flex;
   justify-content: center;
-  border: 2px solid darkslategray;
-  border-radius: 12px;
-  background-color: rgb(164, 223, 243);
-  padding: 5px;
-  margin: 10px;
-  width:30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 2px solid;
+  border-radius: 8px;
+
 }
 
+.paragraphe {
+  color: bisque;
+}
 
-.Sommaire{
+.title {
   display: flex;
   justify-content: center;
-
-
 }
 
-#tree{
-  background-color: lightgray;
-  width: 98%;
+#Accueil {
   margin: auto;
-  padding: 5px;
-}
-.title{
-  display: flex;
-  justify-content: center;
-}
-
-body{
-  margin: auto;
-  background-color: blueviolet;
+  background-image: url(/images/Silksong_Promo_01.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
-#accueil {
+#Jeu_Board {
+  background-color: black;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr ;
-  padding: 5px;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 95%;
+  max-width: 100vw;
+  margin-block: 0.5%;
+  /* Largeur maximale de la viewport */
+  gap: 10px;
+}
+
+#Jeu_Board img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* Garde les proportions de l'image */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#Board_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+
+}
+
+#Main_Accueil {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 1fr;
+
+
+  border-radius: 8px;
+  margin: 5% 5%;
+}
+
+#Under_Main_Jeu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#Main_Jeu {
+  background-image: url(/images/image_1.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+}
+
+#Jeu_Soundtrack {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#Sound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#Sound_Img_Div {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#Sound_Img {
+  width: 50%;
+}
+
+#YTB {
+
+  border: 3px solid #f1f1f1;
+  width: 80%;
+  height: 800px;
+}
+
+@keyframes Disparition {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.nav-mobile {
+  left: 0%;
+  position: absolute;
+  background: #000000;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-mobile a {
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+#check:checked~.nav-mobile {
+  display: block;
+}
+
+.checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#burger {
+  padding: 1.5rem 2rem;
+  background-color: #222831;
+  color: #fff;
+}
+
+label {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #Navigation {
+    display: none;
+
+  }
+
+  #Main_Header {
+    display: none;
+  }
+
+  #header {
+    .checkbtn {
+      display: block;
+      font-size: 5rem;
+      top: 30px;
+    }
+
+    .nav-mobile {
+      top: 160px;
+      width: 100%;
+    }
+
+    .nav-mobile a {
+      font-size: 2rem;
+    }
+  }
+
+
+}
+
+* {
+  font-family: 'Poppins';
+}
+
+#Carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.carousel {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-slides {
+  display: flex;
+  height: 100%;
+  animation: slide 20s infinite ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  background-color: #000;
+}
+
+/* Animation pour 5 images */
+@keyframes slide {
+  0% {
+    transform: translateX(200%);
+  }
+
+  16% {
+    transform: translateX(200%);
+  }
+
+  20% {
+    transform: translateX(100%);
+  }
+
+  36% {
+    transform: translateX(100%);
+  }
+
+  40% {
+    transform: translateX(0%);
+  }
+
+  56% {
+    transform: translateX(0%);
+  }
+
+  60% {
+    transform: translateX(-100%);
+  }
+
+  76% {
+    transform: translateX(-100%);
+  }
+
+  80% {
+    transform: translateX(-200%);
+  }
+
+  96% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 300px;
+  }
 }
 
 
-@keyframes Disparition {
-    0% {
-      opacity: 1;
-      visibility: visible;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
+
