@@ -122,6 +122,7 @@ h2 {
 footer nav p {
   text-align: center;
   color: white;
+  margin-top: 30px;
 }
 
 #Jeu_Text {
@@ -455,6 +456,7 @@ input {
   border: 5px solid white;
   margin-bottom: 30px;
   object-fit: cover;
+  transition: transform 0.3s;
 }
 
 .profile-image:hover {
