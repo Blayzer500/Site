@@ -5,8 +5,11 @@
   font-family: 'Poppins';
 }
 
-html,
-body {
+a{
+  text-decoration: none;
+}
+
+html,body {
   overflow-x: hidden;
   max-width: 100vw;
 }
@@ -67,6 +70,9 @@ body {
   filter: brightness(50%);
 }
 
+.Main_Header a{
+  color: #c0c0c0;
+}
 .Main_Header {
   transition: filter 0.3s, transform 0.3s;
 }
@@ -237,21 +243,8 @@ footer nav p {
   height: 800px;
 }
 
-@keyframes Disparition {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
 
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
 
-#Burger {
-  display: none;
-}
 
 
 .nav-mobile {
@@ -263,7 +256,7 @@ footer nav p {
 }
 
 .nav-mobile a {
-  color: #fff;
+  color: #c0c0c0;
   padding: 1rem 1.5rem;
   display: block;
   display: flex;
@@ -271,10 +264,14 @@ footer nav p {
   justify-content: center;
 }
 
-.nav-mobile {
+#Burger {
   display: none;
 }
 
+
+.nav-mobile {
+  display: none;
+}
 #check:checked~.nav-mobile {
   display: block;
 }
@@ -282,12 +279,8 @@ footer nav p {
 .checkbtn {
   font-size: 1.5rem;
   color: white;
-  cursor: pointer;
 }
 
-#burger {
-  color: #fff;
-}
 
 label {
   display: none;
@@ -297,54 +290,7 @@ input {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  #Navigation {
-    display: none;
 
-  }
-
-  #Burger {
-    display: block;
-  }
-
-  .Main_Header:first-child {
-    display: none;
-  }
-
-  #header {
-    .checkbtn {
-      display: block;
-      font-size: 5rem;
-      top: 30px;
-    }
-
-    .nav-mobile {
-      top: 160px;
-      width: 100%;
-    }
-
-    .nav-mobile a {
-      font-size: 2rem;
-    }
-  }
-
-  #Main_Accueil {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 5% 5%;
-  }
-
-  #Main_Jeu {
-    height: 500px;
-  }
-
-  #YTB {
-    height: 300px;
-  }
-
-}
 
 
 #Carousel {
@@ -382,6 +328,19 @@ input {
   height: 100%;
   object-fit: fill;
 }
+
+@keyframes Disparition {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
 @keyframes slide {
   0% {
@@ -428,6 +387,97 @@ input {
     transform: translateX(200%);
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  #Navigation {
+    display: none;
+
+  }
+
+  #Burger {
+    display: block;
+  }
+
+  #Burger div a p {
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #1a1a1a;
+    border: 2px solid #c0c0c0;;
+  }
+
+
+
+  #Burger_Navigation a span:hover {
+    transform: scale(1.2);
+    filter: brightness(50%);
+  }
+
+  #Burger_Navigation a span {
+    transition: filter 0.3s, transform 0.3s;
+  }
+    #Burger_Navigation {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .nav-mobile a:hover {
+    transform: scale(1.2);
+  }
+
+  .Main_Header a {
+    display: none;
+  }
+
+  #header {
+    .checkbtn {
+      display: block;
+      font-size: 5rem;
+      top: 30px;
+    }
+
+    .nav-mobile {
+      width: 100%;
+    }
+
+    .nav-mobile a {
+      font-size: 2rem;
+    }
+  }
+
+  #Main_Accueil section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #Main_Accueil img {
+    width: 100%;
+  }
+
+  #Main_Jeu {
+    height: 500px;
+  }
+
+  #YTB {
+    height: 300px;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  #First div nav img {
+    width: 100%;
+  }
+
+
+
+
+}
+
+
 
 #moi {
   background: linear-gradient(170deg, #EEBD73 0%, #CC4837 100%);
