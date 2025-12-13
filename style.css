@@ -153,7 +153,7 @@ footer nav p {
   margin-top: 30px;
 }
 
-#Jeu_Text {
+.Jeu_Text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -507,7 +507,7 @@ input {
     
   }
 
-  #Jeu_Text {
+  .Jeu_Text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -580,17 +580,17 @@ input {
 }
 
 
-.profile-image {
+.Profile_Img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 5px solid white;
   margin-bottom: 30px;
   object-fit: cover;
   transition: transform 0.3s;
 }
 
-.profile-image:hover {
+.Profile_Img:hover {
   transform: scale(1.2);
 }
 
