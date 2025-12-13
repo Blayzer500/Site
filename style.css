@@ -5,11 +5,12 @@
   font-family: 'Poppins';
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-html,body {
+html,
+body {
   overflow-x: hidden;
   max-width: 100vw;
 }
@@ -70,9 +71,10 @@ html,body {
   filter: brightness(50%);
 }
 
-.Main_Header a{
+.Main_Header a {
   color: #c0c0c0;
 }
+
 .Main_Header {
   transition: filter 0.3s, transform 0.3s;
 }
@@ -155,7 +157,6 @@ footer nav p {
 }
 
 #Jeu_Board {
-  background-color: black;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr 1fr;
@@ -164,8 +165,8 @@ footer nav p {
 
 #Jeu_Board img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
+  height: auto;
+  transition: transform 0.5s;
 }
 
 #Jeu_Board img:hover {
@@ -177,7 +178,6 @@ footer nav p {
   align-items: center;
   justify-content: center;
   margin: 20px 50px;
-
 }
 
 #Main_Accueil {
@@ -214,23 +214,25 @@ footer nav p {
   grid-template-columns: 50% 50%;
 }
 
-#Jeu_Soundtrack div {
+#Jeu_Soundtrack div:nth-child(1) {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 25%;
 }
 
-#Sound_Img_Div {
-  background-color: black;
+#Jeu_Soundtrack div:nth-child(2) {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 #Sound_Img {
   width: 50%;
+  height: auto;
+  transition: transform 0.3s;
 }
+
 
 #Sound_Img:hover {
   transform: scale(1.2);
@@ -272,6 +274,7 @@ footer nav p {
 .nav-mobile {
   display: none;
 }
+
 #check:checked~.nav-mobile {
   display: block;
 }
@@ -403,10 +406,9 @@ input {
     border-radius: 10px;
     padding: 2px;
     background-color: #1a1a1a;
-    border: 2px solid #c0c0c0;;
+    border: 2px solid #c0c0c0;
+    ;
   }
-
-
 
   #Burger_Navigation a span:hover {
     transform: scale(1.2);
@@ -416,10 +418,11 @@ input {
   #Burger_Navigation a span {
     transition: filter 0.3s, transform 0.3s;
   }
-    #Burger_Navigation {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+
+  #Burger_Navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-mobile a:hover {
@@ -464,6 +467,49 @@ input {
   #YTB {
     height: 300px;
   }
+
+  #Board_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+  #Jeu_Board {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    
+  }
+
+  #Jeu_Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+  }
+
+  #Jeu_Soundtrack {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Jeu_Soundtrack div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-bottom: 50px;
+  }
+  #Jeu_Soundtrack div:nth-child(1) p {
+    margin: 20px;
+  }
+
+
+
+
+
 
 }
 
