@@ -21,7 +21,8 @@ body {
 }
 
 #loader {
-  color: darkblue;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +35,26 @@ body {
   z-index: 1000;
   width: 100vw;
   height: 100vh;
-  background: lightgray;
+  background: rgb(85, 58, 46);
+}
+#loader div {
+  border: 3px solid #ff3c3c38;
+  border-top-color: #ff3c3c;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  animation: spin 1s linear infinite;
+}
+#loader p {
+  color: Bisque;
+  font-size:xx-large;
+  margin-bottom: 30px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #header {
@@ -334,6 +354,11 @@ input {
 
 @keyframes Disparition {
   0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  70% {
     opacity: 1;
     visibility: visible;
   }
