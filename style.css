@@ -506,6 +506,16 @@ input {
     margin: 20px;
   }
 
+  #moi{
+    display: flex;
+    flex-direction: column;
+  }
+  .parcours div{
+    display: flex;
+    flex-direction: column;
+  }
+
+
 
 
 
@@ -588,10 +598,9 @@ input {
 
 .interet {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
 }
-
 .interet div {
   background: #3b3b3b;
   padding: 40px;
@@ -633,10 +642,9 @@ input {
 }
 
 .parcours {
-  padding-left: 50px;
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 10px;
   border: 2px solid rgba(255, 255, 255, 0.2);
